@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>Spring Boot file upload example</h1>
+
+<!--页面上传的三点要求
+1、提交方式为：POST
+2、编码：enctype="multipart/form-data"
+3、input框type类型:file
+-->
+<form method="POST" action="/upload" enctype="multipart/form-data">
+    <input type="file" name="file" /><br/><br/>
+    <input type="submit" value="Submit" />
+</form>
+</body>
+</html>
